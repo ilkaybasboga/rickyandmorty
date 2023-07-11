@@ -1,0 +1,115 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.grid-right {
+  width: 100%;
+  height: 50rem;
+  margin-left: 40px;
+  margin-top: 1.7rem;
+// border: rgb(12, 209, 117) solid 5px;
+
+
+  .text-top{
+// border: red solid 6px;
+font-family: $font-Poppin;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+width: 345px;
+height: 30px;
+  }
+.boxrightcards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+// border: #f6a585 solid 7px;
+
+}
+  .box-char-right-cards {
+    margin:0 2rem 0 0 ;
+display: flex;
+// flex-wrap: wrap;
+// border: #44281D solid 7px;
+align-items: center;
+    width: 20rem;
+
+    
+    img {
+      width: 90px;
+      height: 90px;
+      // top: 210px;
+      // left: 638px;
+      border-radius: 15px
+      
+    }
+    .empty-img {
+    }
+    .text-right{
+      margin-left: 1rem;
+    }
+  }
+  .text-head {
+     font-family: $font-Poppin;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+  }
+  .text-bottom {
+    font-family: $font-Poppin;
+    color: #44281D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+
+
+    .span-1 {
+      width: 16px;
+      height: 16px;
+      color: $btnDead;
+      background-color: $btnDead;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .span-2 {
+      width: 16px;
+      height: 16px;
+      color: $btnAlive;
+      background-color: $btnAlive;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .span-3 {
+      width: 16px;
+      height: 16px;
+      color: $btnUnknown;
+      background-color: $btnUnknown;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .text-right{
+        font-family: $font-Poppin;
+font-size: 16px;
+font-style: italic;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: right;
+
+    }
+    .text-org-name{
+        font-family: $font-Poppin;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: right;
+
+    }
+  }
+}

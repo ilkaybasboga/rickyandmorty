@@ -1,0 +1,96 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.box-btn {
+  width: 100%;
+  // border: red 2px solid;
+  .text {
+    font-family: $font-Poppin;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  margin-left: 39px;
+
+  }
+}
+
+.stack {
+  margin-top: 0.5rem;
+  margin-left: 39px;
+
+  Button {
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+    text-transform: none;
+    color: black;
+    
+  }
+  .btn-1 {
+    background-color: rgba($btnDead, $alpha: 0.05);
+    &:hover {
+      background-color: rgba($btnDead, $alpha: 0.2);
+    }
+    &:active {
+      background-color: rgba($btnDead, $alpha: 0.5);
+    }
+  }
+  .btn-2 {
+    background-color: rgba($btnAlive, $alpha: 0.05);
+    &:hover {
+      background-color: rgba($btnAlive, $alpha: 0.2);
+    }
+    &:active {
+      background-color: rgba($btnAlive, $alpha: 0.5);
+    }
+  }
+  .btn-3 {
+    background-color: rgba($btnUnknown, $alpha: 0.05);
+    &:hover {
+      background-color: rgba($btnUnknown, $alpha: 0.2);
+    }
+    &:active {
+      background-color: rgba($btnUnknown, $alpha: 0.5);
+    }
+  }
+  .btn-4 {
+    background-color: rgba($pink, $alpha: 1);
+    &:hover {
+      background-color: rgba($pink, $alpha: 0.2);
+    }
+    &:active {
+      background-color: rgba($pink, $alpha: 0.5);
+    }
+  }
+  .span-1 {
+    width: 12px;
+    height: 12px;
+    background-color: $btnDead;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+  .span-2 {
+    width: 12px;
+    height: 12px;
+    background-color: $btnAlive;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+  .span-3 {
+    width: 12px;
+    height: 12px;
+    background-color: $btnUnknown;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+  .span-4 {
+    width: 12px;
+    height: 12px;
+    background-color: $pink;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+}

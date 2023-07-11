@@ -1,0 +1,21 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+
+.box-pagi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+  // border: $pink 2px solid;
+
+  height: 119px;
+  position: fixed;
+  bottom: 3rem;  
+  height: 50px;
+  margin: auto;
+  .pagi {
+      margin: auto;
+  }
+}

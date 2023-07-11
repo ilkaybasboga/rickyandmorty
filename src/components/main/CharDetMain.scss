@@ -1,0 +1,10 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.box-main {
+  // width: 80%;
+  margin: auto;
+  display: flex;
+  // border: pink 20px dotted;
+  justify-content: flex-start;
+}

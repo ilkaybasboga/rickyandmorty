@@ -1,0 +1,87 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.grid-Det {
+ 
+  margin-left: 40px;
+  // background-color: $btnAlive;
+
+  .box-charcards {
+    margin: 0;
+    width: 90rem;
+    
+    img {
+      width: 550px;
+      height: 550px;
+      top: 159px;
+      left: 39px;
+      border-radius: 15px;
+    }
+    .empty-img {
+    background-color: $btnUnknown;
+    }
+  }
+  .box-text {
+    width: 35rem;
+  }
+  .text-head {
+    font-family: $font-Poppin;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .text-bottom {
+    font-family: $font-Poppin;
+    color: #44281d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: space-between;
+
+    .span-1 {
+      width: 16px;
+      height: 16px;
+      color: $btnDead;
+      background-color: $btnDead;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .span-2 {
+      width: 16px;
+      height: 16px;
+      color: $btnAlive;
+      background-color: $btnAlive;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .span-3 {
+      width: 16px;
+      height: 16px;
+      color: $btnUnknown;
+      background-color: $btnUnknown;
+      border-radius: 100%;
+      // margin-right: 15px;
+    }
+    .text-right {
+      font-family: $font-Poppin;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: right;
+    }
+    .text-org-name {
+      font-family: $font-Poppin;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: right;
+    }
+  }
+}
