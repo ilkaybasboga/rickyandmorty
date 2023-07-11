@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 interface CharPaginationProps {
   pagination: { from: number, to: number },
-  setPagination: React.Dispatch<React.SetStateAction<{ from: number, to: number }>>,
+  setPagination: React.Dispatch<React.SetStateAction<{ from: number, to: number ,count?:number}>>,
   characterFilter: any[] // change "any" to the appropriate type
 }
 

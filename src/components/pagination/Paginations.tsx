@@ -6,6 +6,7 @@ import {  useSelector } from "react-redux";
 
 interface PaginationProps {
   pagination: {
+    count?:number;
     from: number;
     to: number;
   };

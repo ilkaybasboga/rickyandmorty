@@ -1,42 +1,45 @@
 export interface Character {
+  id:number;
+  name: string;
+  image: string;
+  status: string;
+  species: string;
+  type:string;
+  gender:string;
+  origin: {
     name: string;
-    image: string;
-    status: string;
-    species: string;
-    grey:string;
-  
-    location:{
-      name:string
-    }
-    Item:{
-      gender:string;
-      type:string;
-      origin:{
-        name:string
-      }
-      
-    }
-    
-  }
-  export interface RootState {
-    get: {
-      character: Character[];
-      loading: boolean;
-      filter: {
-        payload: string;
-      };
-      filterLoc: {
-        payload: string;
-      };
-      charDetails: any;
-    };
-  }
-  export interface Item {
+    url: string;
+    },
+
+  location: {
     name: string;
-    image: string;
-    origin: {
-      name: string;
+  };
+}
+export interface RootState {
+  get: {
+    character: Character[];
+    loading: boolean;
+    filter: {
+      payload: string;
     };
-    type: string;
-    gender: string;
-  }
+    filterLoc: {
+      payload: string;
+    };
+    charDetails: any;
+  };
+}
+export interface Item {
+  name: string;
+  image: string;
+  origin: {
+    name: string;
+  };
+  type: string;
+  gender: string;
+}
+export interface Image {
+  url: string;
+  width: number;
+  uid: string;
+  height: number;
+}

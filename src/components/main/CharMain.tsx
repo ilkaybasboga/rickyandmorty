@@ -9,7 +9,7 @@ import CharCardsFilter from "../cards/CharCardsFilter";
 import { Character, RootState } from "../../types/types";
 
 interface Pagination {
-  count: number;
+  count?: number;
   from: number;
   to: number;
 }
@@ -18,7 +18,7 @@ const pageSize = 4;
 
 const CharMain: React.FC = () => {
   const [pagination, setPagination] = useState<Pagination>({
-    count: 0,
+   
     from: 0,
     to: pageSize,
   });
@@ -29,10 +29,11 @@ const CharMain: React.FC = () => {
     RootState["get"]
   >((state) => state.get);
 
+
   const filterText: string = filter.payload;
 
-  const filterLocation: string = filterLoc.payload;
 
+  const filterLocation: string = filterLoc.payload;
   const characters: Character[] = character
     .filter((item: Character) => item.location.name === filterLocation)
     .map((x: Character) => x);
@@ -45,6 +46,7 @@ const CharMain: React.FC = () => {
     pagination.to
   );
   const cardData: Character[] = characters.slice(pagination.from, pagination.to);
+  console.log(filterLocation)
 
   useEffect(() => {
     getData("character");

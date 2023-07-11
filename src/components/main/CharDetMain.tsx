@@ -11,8 +11,8 @@ const CharDetMain: React.FC = () => {
   RootState,
   RootState["get"]
 >((state) => state.get);
-  console.log(charDetails.payload);
-  const charDet = charDetails.payload;
+
+  const charDet = charDetails;
 
   const filterLocation = filterLoc.payload;
   const characters = character

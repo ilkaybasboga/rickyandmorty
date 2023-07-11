@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import randm from "../../asset/58f37720a4fa116215a9240f.png";
+import randm from "../../asset/randm.png";
 import "./NavbarChar.scss";
 
 const NavbarChar: React.FC = () => {

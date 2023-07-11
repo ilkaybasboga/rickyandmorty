@@ -9,14 +9,14 @@ import { useSelector } from "react-redux";
 const pageSize = 3;
 
 interface Pagination {
-  count: number;
+  count?: number;
   from: number;
   to: number;
 }
 
 const Main: React.FC = () => {
   const [pagination, setPagination] = useState<Pagination>({
-    count: 0,
+   
     from: 0,
     to: pageSize,
   });

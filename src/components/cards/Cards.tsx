@@ -19,6 +19,7 @@ interface Props {
 
 const Cards: React.FC<Props> = ({ data }) => {
   const { handleLocationFilter } = useCallData();
+  // console.log(data)
 
   return (
     <Box className="box-card">

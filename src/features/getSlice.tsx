@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import axios from "axios";
+
 
 interface State {
   location: any[];
   character: any[];
   pagination: any[];
   charDetails: any[];
-  filter: string;
-  filterLoc: string;
+  filter: any;
+  filterLoc: any;
   loading: boolean;
   error: boolean;
 }
@@ -17,7 +17,7 @@ const initialState: State = {
   character: [],
   pagination: [],
   charDetails: [],
-  filter: "",
+  filter:[],
   filterLoc: "",
   loading: false,
   error: false
@@ -31,9 +31,26 @@ const getSlice = createSlice({
       state.loading = true;
       state.error = false;
     },
-    getSuccess: (state, action: PayloadAction<{ allData: any, url: string }>) => {
+    // getSuccess: (state, action: PayloadAction<{ allData: any, url: string }>) => {
+    //   state.loading = false;
+    //   state[action.payload.url] = action.payload.allData;
+    // },
+    getSuccess: (
+      state,
+      action: PayloadAction<{ allData: any; url: string }>
+    ) => {
+      const { allData, url } = action.payload;
       state.loading = false;
-      state[action.payload.url] = action.payload.allData;
+      
+      if (url === "location") {
+        state.location = allData;
+      } else if (url === "character") {
+        state.character = allData;
+      } else if (url === "pagination") {
+        state.pagination = allData;
+      } else if (url === "charDetails") {
+        state.charDetails = allData;
+      }
     },
     fetchFail: (state) => {
       state.loading = false;
@@ -43,10 +60,11 @@ const getSlice = createSlice({
       state.pagination = action.payload;
     },
     getfilter: (state, action: PayloadAction<any>) => {
-      state.filter = action.payload;
+      state.filter = action;
+    
     },
     getLocfilter: (state, action: PayloadAction<any>) => {
-      state.filterLoc = action.payload;
+      state.filterLoc = action;
     },
     getCharDetails: (state, action: PayloadAction<any>) => {
       state.charDetails = action.payload;
