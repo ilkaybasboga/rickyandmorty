@@ -3,22 +3,7 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-// import grey from "../../asset/grey.jpg";
-
-interface MediaProps {
-  data: {
-    name: string;
-    image: string;
-    status: string;
-    species: string;
-    type: string;
-    gender: string;
-    origin: {
-      name: string;
-    };
-    id?: string;
-  };
-}
+import { MediaProps } from "../../types/types";
 
 function Media({ data }: MediaProps) {
   console.log(data);
@@ -28,7 +13,6 @@ function Media({ data }: MediaProps) {
       {data ? (
         <Box className="box-left-cards">
           <Box className="box-img">
-          
             <img alt={data.name} src={data.image} />
           </Box>
           <Box className="box-text">
@@ -75,11 +59,11 @@ function Media({ data }: MediaProps) {
       ) : (
         <Box
           className="box-charcards"
-          sx={{ width: 210, marginRight: 0.5, my: 5 }}
+      
         >
           <img alt="" src="" className="empty-img" />
 
-          <Box sx={{ pr: 2 }}>
+          <Box >
             <Typography gutterBottom variant="body2" className="text-head">
               XXX
             </Typography>

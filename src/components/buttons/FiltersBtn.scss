@@ -3,8 +3,7 @@
 
 .box-btn {
   width: 100%;
-  // border: red 2px solid;
-  // padding-left: 21rem;
+
   .text {
     font-family: $font-Poppin;
     font-size: 16px;
@@ -64,33 +63,27 @@
       background-color: rgba($pink, $alpha: 0.5);
     }
   }
-  .span-1 {
-    width: 12px;
-    height: 12px;
-    background-color: $btnDead;
-    border-radius: 100%;
-    margin-right: 15px;
-  }
-  .span-2 {
-    width: 12px;
-    height: 12px;
-    background-color: $btnAlive;
-    border-radius: 100%;
-    margin-right: 15px;
-  }
-  .span-3 {
-    width: 12px;
-    height: 12px;
-    background-color: $btnUnknown;
-    border-radius: 100%;
-    margin-right: 15px;
-  }
+  .span-1,
+  .span-2,
+  .span-3,
   .span-4 {
     width: 12px;
     height: 12px;
-    background-color: $pink;
     border-radius: 100%;
     margin-right: 15px;
+  }
+  .span-1 {
+    background-color: $btnDead;
+    
+  }
+  .span-2 {
+    background-color: $btnAlive;
+  }
+  .span-3 {
+    background-color: $btnUnknown;
+  }
+  .span-4 {
+    background-color: $pink;
   }
 }
 @include media-sm {
@@ -98,6 +91,9 @@
     width: 100%;
     // border: red 2px solid;
     padding-left: 0;
-  
+  }
+  .stack {
+    width: 100%;
+    margin: auto;
   }
 }

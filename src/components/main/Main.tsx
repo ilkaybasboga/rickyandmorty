@@ -6,18 +6,12 @@ import { Box } from "@mui/material";
 import Paginations from "../pagination/Paginations";
 import useCallData from "../../hooks/useCallData";
 import { useSelector } from "react-redux";
+import { Pagination } from "../../types/types";
 
 const pageSize = 3;
 
-interface Pagination {
-  count?: number;
-  from: number;
-  to: number;
-}
-
 const Main: React.FC = () => {
-  const [pagination, setPagination] = useState<Pagination>({
-   
+  const [pagination, setPagination] = useState<Pagination>({   
     from: 0,
     to: pageSize,
   });

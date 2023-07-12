@@ -4,17 +4,12 @@ import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import useCallData from "../../hooks/useCallData";
+import { Item2 } from "../../types/types";
 
-interface Item {
-  id: number;
-  name: string;
-  type: string;
-  dimension: string;
-  residents: string[];
-}
+
 
 interface Props {
-  data: Item[];
+  data: Item2[];
 }
 
 const Cards: React.FC<Props> = ({ data }) => {
@@ -23,7 +18,7 @@ const Cards: React.FC<Props> = ({ data }) => {
 
   return (
     <Box className="box-card">
-      {data.map((item: Item) => (
+      {data.map((item: Item2) => (
         <Box className="card" key={item.id}>
           <CardContent
             className="card-content"

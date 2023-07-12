@@ -52,14 +52,10 @@ const CharCardsFilter: React.FC<CharCardsFilterProps> = ({
             </Box>
           </Box>
         ) : (
-          <Box
-            className="box-charcards"
-            key={index}
-            sx={{ width: 210, marginRight: 0.5, my: 5 }}
-          >
+          <Box className="box-charcards" key={index}>
             <img alt="" src="" className="empty-img" />
 
-            <Box sx={{ pr: 2 }}>
+            <Box>
               <Typography gutterBottom variant="body2" className="text-head">
                 XXX
               </Typography>

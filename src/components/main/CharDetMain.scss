@@ -5,22 +5,18 @@
   width: 90%;
   margin: auto;
   display: flex;
-  // border: rgb(151, 20, 226) 9px dotted;
-  // justify-content: left;
 }
 @include media-sm {
   .box-main-det {
     flex-direction: column;
     width: 100%;
-    margin:auto;
-    // border: pink 5px dotted;
+    margin: auto;
   }
 }
 @include media-lg {
   .box-main-det {
     flex-direction: column;
     width: 100%;
-    margin:auto;
-    // border: pink 5px dotted;
+    margin: auto;
   }
 }

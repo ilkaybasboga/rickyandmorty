@@ -1,34 +1,25 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 
-.box-loc{
-    
-width: 100%;
-// height:100%;
-margin: auto;
-// border: $green 20px solid;
-
+.box-loc {
+  width: 100%;
+  margin: auto;
+  // border: $green 20px solid;
 }
 
-@include media-sm{
-    .box-loc{
-    
-        width: 100%;
-        height: 100%;
-        margin: auto;
+@include media-sm {
+  .box-loc {
+    width: 100%;
+    height: 100%;
+    margin: auto;
     // border: $green 15px dotted;
-        
-        
-        }
+  }
 }
-@include media-lg{
-    .box-loc{
-    
-        width: 100%;
-        height: 1271px;
-        margin: auto;
-        // border: $green 10px dotted;
-
-        
-        }
+@include media-lg {
+  .box-loc {
+    width: 100%;
+    height: 1271px;
+    margin: auto;
+    // border: $green 10px dotted;
+  }
 }

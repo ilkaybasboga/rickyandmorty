@@ -4,15 +4,13 @@
 .grid {
   width: 100%;
   margin-left: 40px;
-  
 
   .box-charcards {
     margin: 30px 30px 30px 0;
     width: fit-content;
-    
-   
-    :hover{
-      cursor:pointer ;
+
+    :hover {
+      cursor: pointer;
     }
     img {
       width: 336px;
@@ -20,10 +18,14 @@
       border-radius: 15px;
     }
     .empty-img {
+      width: 336px;
+      height: 336px;
+      border-radius: 15px;
+      background-color: $btnUnknown;
     }
   }
   .text-head {
-     font-family: $font-Poppin;
+    font-family: $font-Poppin;
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
@@ -32,7 +34,7 @@
   }
   .text-bottom {
     font-family: $font-Poppin;
-    color: #44281D;
+    color: #44281d;
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -41,57 +43,48 @@
     display: flex;
     justify-content: flex-start;
 
-    .span-1 {
-      width: 16px;
-      height: 16px;
-      color: $btnDead;
-      background-color: $btnDead;
-      border-radius: 100%;
-      // margin-right: 15px;
-    }
-    .span-2 {
-      width: 16px;
-      height: 16px;
-      color: $btnAlive;
-      background-color: $btnAlive;
-      border-radius: 100%;
-      // margin-right: 15px;
-    }
+    .span-1,
+    .span-2,
     .span-3 {
       width: 16px;
       height: 16px;
+      border-radius: 100%;
+    }
+    .span-1 {
+      color: $btnDead;
+      background-color: $btnDead;
+    }
+    .span-2 {
+      color: $btnAlive;
+      background-color: $btnAlive;
+    }
+    .span-3 {
       color: $btnUnknown;
       background-color: $btnUnknown;
-      border-radius: 100%;
-      // margin-right: 15px;
     }
   }
 }
 
-
 @include media-sm {
   .grid {
-      width: 100%;
+    width: 100%;
     height: fit-content;
-    // margin: auto;
     display: flex;
-  margin-left: 20px;
-
-    // border: $green 10px dotted;
+    margin-left: 20px;
   }
   .box-charcards {
-   
-    margin:auto;
-      // border: $green 10px dotted;
-
+    margin: auto;
 
     img {
       width: 300px;
       height: 300px;
       border-radius: 15px;
-      // margin: auto;
     }
-    // .empty-img {
-    // }
+    .empty-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      background-color: $btnUnknown;
+    }
   }
 }

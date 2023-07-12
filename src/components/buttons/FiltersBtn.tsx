@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import useCallData from "../../hooks/useCallData";
 
 const FiltersBtn: React.FC = () => {
-  const { handleCardFilter } = useCallData();
+  const { handleCardFilter } = useCallData();   //!useCallData'dan filtrelemek için yazdığım fonksiyonu alıyorum. 
 
   return (
     <Box className="box-btn">
@@ -40,9 +40,9 @@ const FiltersBtn: React.FC = () => {
         <Button
           className="btn-4"
           variant="outlined"
-          onClick={(e) => handleCardFilter("")}
+          onClick={(e) => handleCardFilter("")} //? Filtrelerimi resetlemek için buton ekledim
         >
-          <span className="span-4"></span>
+          <span className="span-4">.</span>
           Clear
         </Button>
       </Stack>

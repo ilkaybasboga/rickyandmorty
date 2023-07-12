@@ -6,32 +6,23 @@ import CharPaginations from "../pagination/CharPaginations";
 import useCallData from "../../hooks/useCallData";
 import { useSelector } from "react-redux";
 import CharCardsFilter from "../cards/CharCardsFilter";
-import { Character, RootState } from "../../types/types";
-
-interface Pagination {
-  count?: number;
-  from: number;
-  to: number;
-}
+import { Character, Pagination, RootState } from "../../types/types";
 
 const pageSize = 4;
 
 const CharMain: React.FC = () => {
   const [pagination, setPagination] = useState<Pagination>({
-   
     from: 0,
     to: pageSize,
   });
   const { getData } = useCallData();
 
-  const { character,  filter, filterLoc } = useSelector<
+  const { character, filter, filterLoc } = useSelector<
     RootState,
     RootState["get"]
   >((state) => state.get);
 
-
   const filterText: string = filter.payload;
-
 
   const filterLocation: string = filterLoc.payload;
   const characters: Character[] = character
@@ -45,8 +36,11 @@ const CharMain: React.FC = () => {
     pagination.from,
     pagination.to
   );
-  const cardData: Character[] = characters.slice(pagination.from, pagination.to);
-  console.log(filterLocation)
+  const cardData: Character[] = characters.slice(
+    pagination.from,
+    pagination.to
+  );
+ 
 
   useEffect(() => {
     getData("character");
@@ -54,7 +48,7 @@ const CharMain: React.FC = () => {
   return (
     <Box className="box-main-char">
       {filterText ? (
-        <CharCardsFilter characterFilters={characterFilters} />
+        <CharCardsFilter characterFilters={characterFilters} /> //** Filtrelemeye göre Component seçiyoruz */
       ) : (
         <CharCards data={cardData} />
       )}
@@ -63,7 +57,7 @@ const CharMain: React.FC = () => {
         <CharPaginations
           pagination={pagination}
           setPagination={setPagination}
-          characterFilter={characterFilter}
+          characterFilter={characterFilter}     //** Pagination değişkenine göre Component seçiyoruz */
         />
       ) : (
         <CharPaginations

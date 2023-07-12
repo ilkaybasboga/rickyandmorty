@@ -8,9 +8,9 @@ import { RootState } from "../../types/types";
 
 const CharDetMain: React.FC = () => {
   const { charDetails, filterLoc, character } = useSelector<
-  RootState,
-  RootState["get"]
->((state) => state.get);
+    RootState,
+    RootState["get"]
+  >((state) => state.get);
 
   const charDet = charDetails;
 

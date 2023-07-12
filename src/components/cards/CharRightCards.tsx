@@ -1,22 +1,23 @@
 import "./CharRightCards.scss";
 import { Grid, Box, Typography } from "@mui/material";
 import { Item } from "../../types/types";
-// import grey from "../../asset/grey.jpg";
-
-
+import useCallData from "../../hooks/useCallData";
 
 interface MediaProps {
   data: Item[];
 }
 
 function Media({ data }: MediaProps) {
+  
+  const { handleCharDetails } = useCallData();
+
   return (
     <Grid wrap="wrap" className="grid-right">
       <Typography className="text-top">Other Characters</Typography>
       <Box className="boxrightcards">
         {data.map((item, index) =>
           item ? (
-            <Box className="box-char-right-cards" key={index}>
+            <Box className="box-char-right-cards" key={index}  onClick={(e) => handleCharDetails(item)}>
               <Box>
                 <img alt={item.name} src={item.image} />
               </Box>
@@ -33,14 +34,10 @@ function Media({ data }: MediaProps) {
               </Box>
             </Box>
           ) : (
-            <Box
-              className="box-charcards"
-              key={index}
-              sx={{ width: 210, marginRight: 0.5, my: 5 }}
-            >
+            <Box className="box-charcards" key={index}>
               <img alt="" src="" className="empty-img" />
 
-              <Box sx={{ pr: 2 }}>
+              <Box>
                 <Typography gutterBottom variant="body2" className="text-head">
                   XXX
                 </Typography>
