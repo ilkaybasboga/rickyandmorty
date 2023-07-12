@@ -21,12 +21,11 @@
 }
 
 
-@include media-md {
+@include media-sm {
   .box-pagi {
-    width: 100% !important;
-    // border: rgb(32, 21, 21) 5px solid;
+    width: 100% ;
     bottom: 0;
-    margin: auto;
+    margin-left:1rem ;
     height: auto;
 
   }
