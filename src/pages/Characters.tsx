@@ -1,6 +1,5 @@
 import React from 'react';
 import NavbarChar from '../components/navbar/NavbarChar';
-import Main from '../components/main/Main';
 import FiltersBtn from '../components/buttons/FiltersBtn';
 import "./Characters.scss";
 import CharMain from '../components/main/CharMain';

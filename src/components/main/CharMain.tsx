@@ -24,7 +24,7 @@ const CharMain: React.FC = () => {
   });
   const { getData } = useCallData();
 
-  const { character, loading, filter, filterLoc, charDetails } = useSelector<
+  const { character,  filter, filterLoc } = useSelector<
     RootState,
     RootState["get"]
   >((state) => state.get);

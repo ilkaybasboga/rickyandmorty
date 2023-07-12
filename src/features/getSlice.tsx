@@ -40,7 +40,7 @@ const getSlice = createSlice({
       action: PayloadAction<{ allData: any; url: string }>
     ) => {
       const { allData, url } = action.payload;
-      state.loading = false;
+     
       
       if (url === "location") {
         state.location = allData;

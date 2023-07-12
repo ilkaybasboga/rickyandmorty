@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import Cards from "../cards/Cards";
 import "./Main.scss";
@@ -22,7 +23,7 @@ const Main: React.FC = () => {
   });
   const { getData } = useCallData();
 
-  const { location, loading } = useSelector((state: any) => state.get);
+  const { location } = useSelector((state: any) => state.get);
 
   const cardData = location.slice(pagination.from, pagination.to);
 

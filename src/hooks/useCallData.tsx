@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { fetchFail, getSuccess, fetchStart, postPagination, getfilter, getLocfilter, getCharDetails } from "../features/getSlice";
+import { fetchFail, getSuccess, fetchStart, getfilter, getLocfilter, getCharDetails } from "../features/getSlice";
 import { useNavigate } from "react-router-dom";
 
 const useCallData = () => {
