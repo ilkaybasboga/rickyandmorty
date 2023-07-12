@@ -46,16 +46,18 @@
 
 @include media-md {
   .box-card {
-    width: 100%;
+    width: 25%;
     flex-direction: column;
     // border: rgb(0, 255, 191) 5px solid;
     
+    
   }
   .card {
-    width: 100%;
+    width:100%;
     // flex-direction: column;
     //  border: rgb(233, 10, 95) 5px solid;
      margin: 0 auto;
+     margin-left:.3rem ;
      
     
   }

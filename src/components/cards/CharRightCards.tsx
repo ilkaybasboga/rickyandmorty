@@ -27,8 +27,8 @@ function Media({ data }: MediaProps) {
                 <Typography className="text-org-name">
                   {item.origin.name}
                 </Typography>
-                <Typography className="text-org-name">
-                  {item.type}-{item.gender}
+                <Typography className="text-org-name-bottom">
+                  {item.species}-{item.gender}
                 </Typography>
               </Box>
             </Box>

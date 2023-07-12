@@ -2,14 +2,14 @@
 @import "../../scss/variables";
 
 .grid-Det {
- 
   margin-left: 40px;
   // background-color: $btnAlive;
-
-  .box-charcards {
+width: fit-content;
+  .box-left-cards {
     margin: 0;
-    width: 90rem;
-    
+    // width: 50rem;
+    // background-color: $btnAlive;
+
     img {
       width: 550px;
       height: 550px;
@@ -82,5 +82,34 @@
       letter-spacing: 0em;
       text-align: right;
     }
+  }
+}
+
+@include media-md {
+  .grid-Det {
+    margin: auto;
+  }
+  .box-left-cards {
+    //  border: $green dotted 10px;
+  }
+  .box-img {
+    width: 67%;
+  }
+  img {
+    max-width: 100%;
+    height: 345px;
+    border-radius: 15px;
+  }
+  .empty-img {
+    width: 100%;
+    height: 345px;
+    border-radius: 15px;
+  }
+  .box-text {
+    width: 100%;
+    //  border: $btnDead 3px double;
+  }
+  .text-bottom {
+    width: 67%;
   }
 }

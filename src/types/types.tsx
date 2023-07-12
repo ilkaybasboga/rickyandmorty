@@ -36,6 +36,7 @@ export interface Item {
   };
   type: string;
   gender: string;
+  species:string
 }
 export interface Image {
   url: string;

@@ -11,3 +11,11 @@ margin: auto;
 // border: rgb(218, 123, 123) 3px solid;
 
 }
+@include media-md {
+    .box-char-det{
+// border: rgb(218, 123, 123) 3px solid;
+// width: 100%;
+height:fit-content;
+
+    }
+}

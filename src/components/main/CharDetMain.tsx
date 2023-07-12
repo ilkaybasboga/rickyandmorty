@@ -21,7 +21,7 @@ const CharDetMain: React.FC = () => {
     .slice(0, 6);
 
   return (
-    <Box className="box-main">
+    <Box className="box-main-det">
       <CharCardsDet data={charDet} />
       <CharRightCards data={characters} />
     </Box>

@@ -26,7 +26,7 @@ function Media({ data }: MediaProps) {
   return (
     <Grid container wrap="wrap" className="grid-Det">
       {data ? (
-        <Box className="box-charcards">
+        <Box className="box-left-cards">
           <Box className="box-img">
           
             <img alt={data.name} src={data.image} />
@@ -42,7 +42,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.type}-{data.gender}
+                    {data.species}-{data.gender}
                   </div>
                 </div>
               ) : data.status === "Alive" ? (
@@ -52,7 +52,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.type}-{data.gender}
+                    {data.species}-{data.gender}
                   </div>
                 </div>
               ) : (
@@ -62,7 +62,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.type}-{data.gender}
+                    {data.species}-{data.gender}
                   </div>
                 </div>
               )}

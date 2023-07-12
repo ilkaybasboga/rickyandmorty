@@ -8,7 +8,7 @@ const NavbarChar: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <Box className="navbar">
+    <Box className="navbar-char">
          <svg
         width="46"
         height="23"

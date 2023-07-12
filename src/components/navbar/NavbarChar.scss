@@ -1,7 +1,7 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.navbar{
+.navbar-char{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -21,4 +21,16 @@ img{
    margin: 1.9rem auto;
 //    border: $green solid 2px;
 }}
+
+@include media-md {
+  .navbar-char{
+    width: 21%;
+  }
+  img{
+    width: 140px;
+    height: 40px;
+   margin: auto;
+//    border: $green solid 2px;
+}
+}
 

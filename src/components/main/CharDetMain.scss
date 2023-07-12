@@ -1,10 +1,18 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
 
-.box-main {
+.box-main-det {
   // width: 80%;
-  margin: auto;
+  // margin: auto;
   display: flex;
   // border: pink 20px dotted;
-  justify-content: flex-start;
+  // justify-content: left;
+}
+@include media-md {
+  .box-main-det {
+    flex-direction: column;
+    width: 28%;
+    margin-left: .5rem;
+    // border: pink 5px dotted;
+  }
 }

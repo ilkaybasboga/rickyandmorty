@@ -52,7 +52,7 @@ const CharMain: React.FC = () => {
     getData("character");
   }, []);
   return (
-    <Box className="box-main">
+    <Box className="box-main-char">
       {filterText ? (
         <CharCardsFilter characterFilters={characterFilters} />
       ) : (
