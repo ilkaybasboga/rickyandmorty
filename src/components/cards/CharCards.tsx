@@ -8,7 +8,7 @@ function Media({ data }: { data: Character[] }) {
   const { handleCharDetails } = useCallData();
 
   return (
-    <Grid container wrap="wrap" className="grid">
+    <Grid container  className="grid">
       {data.map((item: Character, index: number) =>
         item ? (
           <Box

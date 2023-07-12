@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import randm from "../../asset/randm.png";
 import "./NavbarChar.scss";
+import { Box } from "@mui/material";
 
 const NavbarChar: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="navbar">
+    <Box className="navbar">
          <svg
         width="46"
         height="23"
@@ -22,7 +23,7 @@ const NavbarChar: React.FC = () => {
         />
       </svg>
       <img src={randm} alt="R&M" />
-    </div>
+    </Box>
   );
 };
 

@@ -19,3 +19,19 @@
       margin: auto;
   }
 }
+
+
+@include media-md {
+  .box-pagi {
+    width: 100% !important;
+    // border: rgb(32, 21, 21) 5px solid;
+    bottom: 0;
+    margin: auto;
+    height: auto;
+
+  }
+  .pagi{
+    width: 100%;
+    margin: auto;
+  }
+}

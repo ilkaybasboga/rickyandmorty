@@ -27,8 +27,10 @@ function Media({ data }: MediaProps) {
     <Grid container wrap="wrap" className="grid-Det">
       {data ? (
         <Box className="box-charcards">
-          <img alt={data.name} src={data.image} />
-
+          <Box className="box-img">
+          
+            <img alt={data.name} src={data.image} />
+          </Box>
           <Box className="box-text">
             <Typography className="text-head">{data.name}</Typography>
 
