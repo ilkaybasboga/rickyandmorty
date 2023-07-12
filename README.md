@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# Rick and Morty Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+In this project, I wanted to introduce the locations and characters of the Rick and Morty cartoon.
 
-In the project directory, you can run:
+## Project Skeleton
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+Rick and Morty Project (folder for redux)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+|----readme.md     
+SOLUTION
+├── src
+|    ├── index.js
+|    ├── App.scss
+|    ├── App.tsx
+|    ├── app
+|    │   └── store.tsx
+|    ├── assets
+|    │   ├── grey.jpg
+|    │   ├── randm.png
+|    ├── components
+|    │   ├── buttons
+|    │   │   ├── FiltersBtn.scss
+|    │   │   └── FiltersBtn.tsx
+|    │   ├── Cards
+|    │   │   ├── Cards.scss
+|    │   │   |── Cards.tsx
+|    │   │   ├── CharCards.scss
+|    │   │   |── CharCards.tsx
+|    │   │   ├── CharCardsDet.scss
+|    │   │   |── CharCardsDet.tsx
+|    │   │   ├── CharCardsFilter.tsx
+|    │   │   ├── CharRightCards.scss
+|    │   │   └── CharRightCards.tsx
+|    │   ├── main
+|    │   │   ├── CharDetMain.scss
+|    │   │   ├── CharDetMain.tsx
+|    │   │   ├── CharMain.scss
+|    │   │   ├── CharMain.tsx
+|    │   │   ├── Main.scss
+|    │   │   └── Main.tsx
+|    │   ├── navbar
+|    │   │   ├── Navbar.scss
+|    │   │   ├── Navbar.tsx
+|    │   │   ├── NavbarChar.scss
+|    │   │   └── NavbarChar.tsx
+|    │   ├── pagination
+|    │   │   ├──CharPaginations.scss
+|    │   │   ├──CharPaginations.tsx
+|    │   │   ├──Pagination.scss
+|    │   │   └──Pagination.tsx
+|    ├── features
+|    │   └── getSlice.tsx
+|    ├── scss
+|    │   |── _mixins.scss
+|    │   |── _reset.scss
+|    │   └── _variables.scss
+|    ├── types
+|    │   └── types.tsx
+|    ├── hooks
+|    │   └── useCallData.tsx
+|    ├── pages
+|    │   ├── Characters.scss
+|    │   ├── Characters.tsx
+|    │   ├── CharactersDetails.scss
+|    │   ├── CharactersDetails.tsx
+|    │   ├── Locations.scss
+|    │   └── Locations.tsx
+|    └── router
+|        └── AppRouter.tsx
+```
 
-### `npm test`
+## Expected Outcome
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Rick and Morty](./src/asset/RickandMorty1.gif)
 
-### `npm run build`
+## Objective
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I want to make a comprehensive project using Redux, MUI,API,React,TypeScript.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### I will use the following elements in the project;;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML
 
-### `npm run eject`
+- CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- TS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React/Redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- API
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-MUI
 
-## Learn More
+-Axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-SCSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Steps to Solution
+
+- Step 1: I created React App using Typescript
+
+- Step 2: I got the data using api
+
+- Step 3 : Async-await and aixos data transfer is done.
+
+- Step 4 : File hierarchy is established with React/Redux.
+
+- Step 5 : I used css frameworks like Scss, Material UI.
+
+- Step 6 : I used filter and map methods in transitions between pages
+
+- Step 7 : I added the project gif to the project and my README.md file
+
+
+## API
+https://rickandmortyapi.com/
+```
+
+```
