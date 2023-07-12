@@ -2,16 +2,27 @@
 @import "../../scss/variables";
 
 .box-main {
-    // width: 80%;
+    width: 100%;
     margin-left:0;
     // justify-content: left;
+      // border: rgb(32, 21, 21) 5px solid;
+
   }
 
   @include media-md {
     .box-main {
       width: 100%;
       // border: rgb(32, 21, 21) 5px solid;
-      height: 100%;
+      
+      
+    }
+  }
+  
+  @include media-lg {
+    .box-main {
+      width: 100%;
+      // border: rgb(228, 27, 27) 5px solid;
+      
       
     }
   }

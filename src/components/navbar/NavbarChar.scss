@@ -24,7 +24,18 @@ img{
 
 @include media-md {
   .navbar-char{
-    width: 21%;
+    width: 90%;
+  }
+  img{
+    width: 140px;
+    height: 40px;
+   margin: auto;
+//    border: $green solid 2px;
+}
+}
+@include media-lg {
+  .navbar-char{
+    width: 90%;
   }
   img{
     width: 140px;

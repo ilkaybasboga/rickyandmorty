@@ -2,7 +2,7 @@
 @import "../../scss/variables";
 
 .grid-right {
-  width: 100%;
+  width: 50rem;
   height: 50rem;
   margin-left: 40px;
   margin-top: 1.7rem;
@@ -124,10 +124,13 @@ font-style: italic;
   }
 }
 
-@include media-md{
+@include media-sm{
   .grid-right {
+    width: 100%;
     margin: auto ;
-    height: auto;
+    height: fit-content;
+    flex-direction: column;
+    margin-top: 1rem;
   }
 
   .text-head{
@@ -135,5 +138,23 @@ font-style: italic;
 font-weight: 600;
 line-height: 30px;
   }
+
+}
+@include media-lg{
+  .grid-right {
+    width: 90%;
+    margin: auto ;
+    height: fit-content;
+    
+    margin: auto;
+  }
+  .boxrightcards{
+flex-direction: column;
+  }
+//   .text-head{
+//     font-size: 18px;
+// font-weight: 600;
+// line-height: 30px;
+//   }
 
 }

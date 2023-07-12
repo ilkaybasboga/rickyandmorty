@@ -1,13 +1,27 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
 
+.box-main-char {
+  // margin-left: 39px;
+  width: 100%;
 
-.box-main-char{
-    // margin-left: 39px;
-    width: 100%;
-
-    display: flex;
-  justify-content: flex-start;
+  display: flex;
+  // justify-content: center;
   // border: red 2px solid;
-  
+  // border: $btnDead 5px solid;
+  margin: auto;
+}
+
+@include media-sm {
+  .box-main-char {
+    width: 100%;
+    margin: auto;
+  }
+}
+@include media-lg {
+  .box-main-char {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
 }

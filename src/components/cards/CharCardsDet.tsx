@@ -42,7 +42,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.species}-{data.gender}
+                    {data.type}-{data.gender}
                   </div>
                 </div>
               ) : data.status === "Alive" ? (
@@ -52,7 +52,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.species}-{data.gender}
+                    {data.type}-{data.gender}
                   </div>
                 </div>
               ) : (
@@ -62,7 +62,7 @@ function Media({ data }: MediaProps) {
                     {data.species}
                   </div>
                   <div className="text-right">
-                    {data.species}-{data.gender}
+                    {data.type}-{data.gender}
                   </div>
                 </div>
               )}

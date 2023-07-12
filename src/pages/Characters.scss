@@ -3,11 +3,33 @@
 
 .box-char{
     
-    width: 1512px;
-height: 1271px;
+    width: 100%;
+height: 100%;
 // top: 1943px;
 // left: 532px;
 margin: auto;
 // border: grey 3px solid;
 
+}
+@include media-sm{
+    .box-char{
+    
+        width: 1400px;
+        height: 400px;
+        margin: auto;
+        border: red 5px dotted;
+        
+        
+        }
+}
+@include media-lg{
+    .box-char{
+    
+        width: 100%;
+        height: 1271px;
+        margin: auto;
+        // border: $green 10px dotted;
+
+        
+        }
 }

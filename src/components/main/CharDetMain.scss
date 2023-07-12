@@ -2,17 +2,25 @@
 @import "../../scss/variables";
 
 .box-main-det {
-  // width: 80%;
-  // margin: auto;
+  width: 90%;
+  margin: auto;
   display: flex;
-  // border: pink 20px dotted;
+  // border: rgb(151, 20, 226) 9px dotted;
   // justify-content: left;
 }
-@include media-md {
+@include media-sm {
   .box-main-det {
     flex-direction: column;
-    width: 28%;
-    margin-left: .5rem;
+    width: 100%;
+    margin:auto;
+    // border: pink 5px dotted;
+  }
+}
+@include media-lg {
+  .box-main-det {
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
     // border: pink 5px dotted;
   }
 }

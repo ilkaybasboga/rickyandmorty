@@ -20,10 +20,10 @@ const CharPaginations: React.FC<CharPaginationProps> = ({ pagination, setPaginat
   };
 
   return (
-    <Box className="box-pagi">
+    <Box className="box-pagi-char">
       <Pagination
         count={Math.ceil(characterFilter.length / pageSize)}
-        className="pagi"
+        className="pagi-char"
         onChange={handlePageChange}
       />
     </Box>

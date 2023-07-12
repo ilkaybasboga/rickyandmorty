@@ -1,24 +1,24 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.box-pagi {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
+.box-pagi-char {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   // border: $pink 2px solid;
-  margin: auto;
-  width: 80%;
+  // margin: auto;
+  width: 100%;
   height: 119px;
   position: fixed;
   bottom: 3rem;  
   height: 50px;
-  .pagi {
+  .pagi-char {
       margin: auto;
   }
 }
 @include media-md {
-  .box-pagi {
+  .box-pagi-char {
     width: 100% !important;
     // border: rgb(32, 21, 21) 5px solid;
     bottom: 0;
@@ -26,7 +26,22 @@
     height: auto;
 
   }
-  .pagi{
+  .pagi-char{
+    width: fit-content;
+    // border: rgb(184, 25, 25) 2px solid;
+    
+  }
+}
+@include media-lg {
+  .box-pagi-char {
+    width: 100% ;
+    // border: rgb(32, 21, 21) 5px solid;
+    bottom: 1rem;
+    margin: auto;
+    height: auto;
+
+  }
+  .pagi-char{
     width: fit-content;
     // border: rgb(184, 25, 25) 2px solid;
     

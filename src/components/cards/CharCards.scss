@@ -9,6 +9,8 @@
   .box-charcards {
     margin: 30px 30px 30px 0;
     width: fit-content;
+    
+   
     :hover{
       cursor:pointer ;
     }
@@ -17,8 +19,8 @@
       height: 336px;
       border-radius: 15px;
     }
-    // .empty-img {
-    // }
+    .empty-img {
+    }
   }
   .text-head {
      font-family: $font-Poppin;
@@ -63,5 +65,33 @@
       border-radius: 100%;
       // margin-right: 15px;
     }
+  }
+}
+
+
+@include media-sm {
+  .grid {
+      width: 100%;
+    height: fit-content;
+    // margin: auto;
+    display: flex;
+  margin-left: 20px;
+
+    // border: $green 10px dotted;
+  }
+  .box-charcards {
+   
+    margin:auto;
+      // border: $green 10px dotted;
+
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      // margin: auto;
+    }
+    // .empty-img {
+    // }
   }
 }

@@ -4,6 +4,7 @@
 .box-btn {
   width: 100%;
   // border: red 2px solid;
+  // padding-left: 21rem;
   .text {
     font-family: $font-Poppin;
     font-size: 16px;
@@ -11,8 +12,7 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-  margin-left: 39px;
-
+    margin-left: 39px;
   }
 }
 
@@ -27,7 +27,6 @@
     font-size: 13px;
     text-transform: none;
     color: black;
-    
   }
   .btn-1 {
     background-color: rgba($btnDead, $alpha: 0.05);
@@ -92,5 +91,13 @@
     background-color: $pink;
     border-radius: 100%;
     margin-right: 15px;
+  }
+}
+@include media-sm {
+  .box-btn {
+    width: 100%;
+    // border: red 2px solid;
+    padding-left: 0;
+  
   }
 }

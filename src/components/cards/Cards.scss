@@ -13,10 +13,10 @@
 }
 .card {
   width: 30%;
-  min-width: 23rem;
+  min-width: 20rem;
   margin: 1rem 2rem;
-  :hover{
-    cursor:pointer ;
+  :hover {
+    cursor: pointer;
   }
   .card-content {
     background-color: $yellow;
@@ -43,22 +43,29 @@
   }
 }
 
-
 @include media-md {
   .box-card {
-    width: 25%;
+    width: 100%;
     flex-direction: column;
-    // border: rgb(0, 255, 191) 5px solid;
-    
-    
+    // border: rgb(240, 134, 14) 5px solid;
   }
   .card {
-    width:100%;
+    width: 95%;
     // flex-direction: column;
-    //  border: rgb(233, 10, 95) 5px solid;
-     margin: 0 auto;
-     margin-left:.3rem ;
-     
-    
+    // border: rgb(233, 10, 95) 5px solid;
+    margin: 0 auto;
+  }
+}
+@include media-lg {
+  .box-card {
+    width: 100%;
+    flex-direction: column;
+    // border: rgb(240, 134, 14) 5px solid;
+  }
+  .card {
+    width: 70%;
+    // flex-direction: column;
+    // border: rgb(233, 10, 95) 5px solid;
+    margin: 0 auto;
   }
 }
