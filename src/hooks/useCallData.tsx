@@ -10,7 +10,6 @@ const useCallData = () => {
   const getData = async (url: string) => {
     const BASE_URL = "https://rickandmortyapi.com/api";
 
-    dispatch(fetchStart());
     try {
       const { data } = await axios(`${BASE_URL}/${url}/`);
       const pageCount = data.info.pages;
@@ -20,6 +19,9 @@ const useCallData = () => {
         const response = await axios.get(`${BASE_URL}/${url}?page=${i}`);
         const firstData = response.data.results;
         allData = allData.concat(firstData);
+      const status = response.status
+      dispatch(fetchStart(status));
+
       }
 
       dispatch(getSuccess({ allData, url }));

@@ -2,19 +2,9 @@ import Pagination from "@mui/material/Pagination";
 import "./Paginations.scss";
 import { Box } from "@mui/material";
 import {  useSelector } from "react-redux";
+import { PaginationProps } from "../../types/types";
 
 
-interface PaginationProps {
-  pagination: {
-    count?:number;
-    from: number;
-    to: number;
-  };
-  setPagination: React.Dispatch<React.SetStateAction<{
-    from: number;
-    to: number;
-  }>>;
-}
 
 const pageSize = 3;
 

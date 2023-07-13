@@ -5,9 +5,10 @@ import CharCardsDet from "../cards/CharCardsDet";
 import CharRightCards from "../cards/CharRightCards";
 import { useSelector } from "react-redux";
 import { RootState } from "../../types/types";
+import SkeletonCharDet from "../skeleton/SkeletonCharDet";
 
 const CharDetMain: React.FC = () => {
-  const { charDetails, filterLoc, character } = useSelector<
+  const { charDetails, filterLoc, character,status } = useSelector<
     RootState,
     RootState["get"]
   >((state) => state.get);
@@ -22,6 +23,7 @@ const CharDetMain: React.FC = () => {
 
   return (
     <Box className="box-main-det">
+      {!(status===200) && <SkeletonCharDet/>}
       <CharCardsDet data={charDet} />
       <CharRightCards data={characters} />
     </Box>

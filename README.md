@@ -69,6 +69,10 @@ SOLUTION
 |    │   ├── CharactersDetails.tsx
 |    │   ├── Locations.scss
 |    │   └── Locations.tsx
+|    ├── skeleton
+|    │   ├── SkeletonChar.tsx
+|    │   ├── SkeletonCharDet.tsx
+|    │   └── SkeletonLoc.tsx
 |    └── router
 |        └── AppRouter.tsx
 ```
@@ -79,7 +83,7 @@ SOLUTION
 
 ## Objective
 
-I want to make a comprehensive project using Redux, MUI,API,React,TypeScript.
+I want to make a comprehensive project using Redux, MUI,API,React,TypeScript and Skeleton/React.
 
 ### I will use the following elements in the project;;
 
@@ -93,11 +97,15 @@ I want to make a comprehensive project using Redux, MUI,API,React,TypeScript.
 
 - API
 
--MUI
+- MUI
 
--Axios
+- Axios
 
--SCSS
+- SCSS
+
+- Skeleton/React
+
+
 
 
 ## Steps to Solution

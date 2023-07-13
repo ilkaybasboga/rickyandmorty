@@ -6,11 +6,16 @@ import { Box } from "@mui/material";
 import Paginations from "../pagination/Paginations";
 import useCallData from "../../hooks/useCallData";
 import { useSelector } from "react-redux";
-import { Pagination } from "../../types/types";
+import { Pagination, RootState } from "../../types/types";
+import SkeletonLoc from "../skeleton/SkeletonLoc";
 
 const pageSize = 3;
 
 const Main: React.FC = () => {
+  const { status } = useSelector<
+  RootState,
+  RootState["get"]
+>((state) => state.get);
   const [pagination, setPagination] = useState<Pagination>({   
     from: 0,
     to: pageSize,
@@ -27,6 +32,7 @@ const Main: React.FC = () => {
 
   return (
     <Box className="box-main">
+      {!(status) && <SkeletonLoc/>}
       <Cards data={cardData} />
       <Paginations pagination={pagination} setPagination={setPagination} />
     </Box>

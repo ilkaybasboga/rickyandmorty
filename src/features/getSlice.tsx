@@ -10,6 +10,7 @@ interface State {
   filterLoc: any;
   loading: boolean;
   error: boolean;
+  status:any;
 }
 
 const initialState: State = {
@@ -20,16 +21,17 @@ const initialState: State = {
   filter:[],
   filterLoc: "",
   loading: false,
-  error: false
+  error: false,
+  status:0
 };
 
 const getSlice = createSlice({
   name: "get",
   initialState,
   reducers: {
-    fetchStart: (state) => {
-      state.loading = true;
-      state.error = false;
+    fetchStart: (state, action: PayloadAction<any>) => {
+      state.status = action.payload;
+      
     },
     // getSuccess: (state, action: PayloadAction<{ allData: any, url: string }>) => {
     //   state.loading = false;

@@ -1,15 +1,15 @@
 export interface Character {
-  id:number;
+  id: number;
   name: string;
   image: string;
   status: string;
   species: string;
-  type:string;
-  gender:string;
+  type: string;
+  gender: string;
   origin: {
     name: string;
     url: string;
-    },
+  };
 
   location: {
     name: string;
@@ -17,6 +17,7 @@ export interface Character {
 }
 export interface RootState {
   get: {
+    status: number;
     character: Character[];
     loading: boolean;
     filter: {
@@ -36,7 +37,7 @@ export interface Item {
   };
   type: string;
   gender: string;
-  species:string
+  species: string;
 }
 export interface Image {
   url: string;
@@ -57,6 +58,12 @@ export interface Item2 {
   dimension: string;
   residents: string[];
 }
+export interface Metadata {
+  name: string;
+  github: string;
+  description: string;
+  filename: string;
+}
 
 export interface MediaProps {
   data: {
@@ -71,4 +78,29 @@ export interface MediaProps {
     };
     id?: string;
   };
+}
+
+export interface PaginationProps {
+  pagination: {
+    count?: number;
+    from: number;
+    to: number;
+  };
+  setPagination: React.Dispatch<
+    React.SetStateAction<{
+      from: number;
+      to: number;
+    }>
+  >;
+}
+
+
+export interface CatalogMagicProps {
+  width?: number;
+  heading?: { width: number; height: number };
+  row?: number;
+  column?: number;
+  padding?: number;
+  borderRadius?: number;
+ 
 }

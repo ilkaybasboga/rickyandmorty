@@ -7,6 +7,7 @@ import useCallData from "../../hooks/useCallData";
 import { useSelector } from "react-redux";
 import CharCardsFilter from "../cards/CharCardsFilter";
 import { Character, Pagination, RootState } from "../../types/types";
+import SkeletonChar from "../skeleton/SkeletonChar";
 
 const pageSize = 4;
 
@@ -17,7 +18,7 @@ const CharMain: React.FC = () => {
   });
   const { getData } = useCallData();
 
-  const { character, filter, filterLoc } = useSelector<
+  const { character, filter, filterLoc,status } = useSelector<
     RootState,
     RootState["get"]
   >((state) => state.get);
@@ -47,6 +48,7 @@ const CharMain: React.FC = () => {
   }, []);
   return (
     <Box className="box-main-char">
+      {!(status===200) && <SkeletonChar/>}
       {filterText ? (
         <CharCardsFilter characterFilters={characterFilters} /> //** Filtrelemeye göre Component seçiyoruz */
       ) : (
